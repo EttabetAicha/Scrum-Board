@@ -8,16 +8,10 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css
-
-
-
-    ">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
-
 <body>
-    <header style="width: 100%;">
+    <header >
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
             <a class="navbar-brand" href="#">
                 <img src="../images/logo.png" alt="Logo" width="200">
@@ -26,7 +20,8 @@
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNav" style="margin-left: 260px;">
+            <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNav"
+                style="margin-left: 260px;">
                 <ul class="navbar-nav">
                     <li class="nav-item dropdown mx-3 ">
                         <a class="nav-link dropdown-toggle" href="#" id="teamsDropdown" role="button"
@@ -50,8 +45,7 @@
                         </div>
                     </li>
                     <li class="nav-item mx-5 mt-2">
-                        <button class="btn  py-1 rounded "
-                            style="background: #2887f3; color: aliceblue;">Create</button>
+                        <button class="btn  py-1 rounded "style="background: #2887f3; color: aliceblue;">Create</button>
                     </li>
                 </ul>
             </div>
@@ -68,144 +62,149 @@
             </ul>
         </nav>
     </header>
-
-    <nav class="sidebar close">
-        <aside style="border-bottom: 1px solid rgba(128, 128, 128, 0.315); ">
-            <div class="image-text" style="  padding-bottom: 21px;">
-                <span class="image">
-                    <img src="../images/image 3.png" alt="">
-                </span>
-                <div class="text logo-text">
-                    <span class="name">Nameprojects</span>
-                    <span class="profession">Software project</span>
-                </div>
-            </div>
-
-            <i class='bx bx-chevron-right toggle'></i>
-        </aside>
-
-        <div class="menu-bar">
-            <div class="menu">
-                <ul class="menu-links">
-                    <li class="nav-link">
-                        <a href="#">
-                            <i class='bx bx-time icon'></i>
-                            <span class="text nav-text">Timeline</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-link">
-                        <a href="#">
-                            <i class='bx bx-list-plus icon'></i>
-                            <span class="text nav-text">Backlog</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-link">
-                        <a href="#">
-                            <i class='bx bxs-dashboard icon'></i>
-                            <span class="text nav-text">Board</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-link">
-                        <a href="#">
-                            <i class='bx bx-cog icon'></i>
-                            <span class="text nav-text">Projects Settings</span>
-                        </a>
-                    </li>
-
-
-
-                </ul>
-            </div>
-
-    </nav>
-    <section class="Board-centered">
-        <section class="Board-centered-top">
-            <div class="Board-centered-top-leftContent">
-                <div>
-                    <p class="shiftedText">Projects / scrum-board</p>
-                    <p class="BoldText">SB Sprint 1</p>
-                    <p class="shiftedText">Complete the web development and user interface</p>
-                </div>
-                <div class="searchBarAndProfiles">
-                    <div class="search-bar">
-                        <div class="search-input-container">
-                            <i class="fas fa-search search-icon"></i>
-                            <input class="search-input" type="text" placeholder="Search..." />
-                        </div>
+    <div class="main">
+        <nav class="sidebar close ">
+            <aside >
+                <div class="image-text" style="  padding-bottom: 21px;">
+                    <span class="image">
+                        <img src="../images/image 3.png" alt="">
+                    </span>
+                    <div class="text logo-text">
+                        <span class="name">Nameprojects</span>
+                        <span class="profession">Software project</span>
                     </div>
-                    <div class="profiles" style="position: relative;">
-                        <div class="ProfileSercle c1" style="position: absolute;left: 10px; background: purple;">
-                            <p class="shiftedText">Y</p>
+                </div>
+
+                <i class='bx bx-chevron-right toggle'></i>
+            </aside>
+
+            <div class="menu-bar">
+                <div class="menu">
+                    <ul class="menu-links">
+                        <li class="nav-link">
+                            <a href="#">
+                                <i class='bx bx-time icon'></i>
+                                <span class="text nav-text">Timeline</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-link">
+                            <a href="#">
+                                <i class='bx bx-list-plus icon'></i>
+                                <span class="text nav-text">Backlog</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-link">
+                            <a href="#">
+                                <i class='bx bxs-dashboard icon'></i>
+                                <span class="text nav-text">Board</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-link">
+                            <a href="#">
+                                <i class='bx bx-cog icon'></i>
+                                <span class="text nav-text">Projects Settings</span>
+                            </a>
+                        </li>
+
+
+
+                    </ul>
+                </div>
+
+        </nav>
+        <section class="Board-centered">
+            <section class="Board-centered-top">
+                <div class="Board-centered-top-leftContent">
+                    <div>
+                        <p class="shiftedText">Projects / scrum-board</p>
+                        <p class="BoldText">SB Sprint 1</p>
+                        <p class="shiftedText">Complete the web development and user interface</p>
+                    </div>
+                    <div class="searchBarAndProfiles">
+                        <div class="search-bar">
+                            <div class="search-input-container">
+                                <i class="fas fa-search search-icon"></i>
+                                <input class="search-input" maxlength="15" type="text" placeholder="Search..." />
+                            </div>
                         </div>
-                        <div class="ProfileSercle c2" style="position: absolute;left: 45px; background: blue">
-                            <p class="shiftedText" >H</p>
+                        <div class="profiles" style="position: relative;">
+                            <div class="ProfileSercle c1" style="position: absolute;left: 10px; background: purple;">
+                                <p class="shiftedText">Y</p>
+                            </div>
+                            <div class="ProfileSercle c2" style="position: absolute;left: 40px; background: blue">
+                                <p class="shiftedText">H</p>
+                            </div>
+                            <div class="ProfileSercle c3" style="position: absolute;left: 70px; background: green">
+                                <p class="shiftedText">AB</p>
+                            </div>
+                            <div class="ProfileSercle c4" style="position: absolute;left: 100px; background: black">
+                                <p class="shiftedText">A</p>
+                            </div>
                         </div>
-                        <div class="ProfileSercle c3" style="position: absolute;left: 80px; background: green">
-                            <p class="shiftedText">AB</p>
-                        </div>
-                        <div class="ProfileSercle c4" style="position: absolute;left: 120px; background: black">
-                            <p class="shiftedText">A</p>
-                        </div>
+
                     </div>
 
                 </div>
-                
-            </div>
-            <div class="Board-settings">
-                <i class="fa-solid fa-sliders"></i>
-                <p>settings</p>
-            </div>
+                <div class="settingContainer">
+                    <div class="Board-settings">
+                        <i class="fa-solid fa-sliders icon"></i>
+                        <p>View settings</p>
+                    </div>
+                </div>
+
+            </section>
+
+
+            <section class="Board-centered-buttom"></section>
         </section>
-        
-        
-        <section class="Board-centered-buttom"></section>
-    </section>
+    </div>
+
 
     <script src="../js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<!-- Code injected by live-server -->
-<script>
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script>
+    <!-- Code injected by live-server -->
+    <script>
+        // <![CDATA[  <-- For SVG support
+        if ('WebSocket' in window) {
+            (function () {
+                function refreshCSS() {
+                    var sheets = [].slice.call(document.getElementsByTagName("link"));
+                    var head = document.getElementsByTagName("head")[0];
+                    for (var i = 0; i < sheets.length; ++i) {
+                        var elem = sheets[i];
+                        var parent = elem.parentElement || head;
+                        parent.removeChild(elem);
+                        var rel = elem.rel;
+                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                        }
+                        parent.appendChild(elem);
+                    }
+                }
+                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                var address = protocol + window.location.host + window.location.pathname + '/ws';
+                var socket = new WebSocket(address);
+                socket.onmessage = function (msg) {
+                    if (msg.data == 'reload') window.location.reload();
+                    else if (msg.data == 'refreshcss') refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                    console.log('Live reload enabled.');
+                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                }
+            })();
+        }
+        else {
+            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+        }
+        // ]]>
+    </script>
 </body>
 
 </html>
