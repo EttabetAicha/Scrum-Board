@@ -111,7 +111,8 @@ aside .image-text .name {
 }
 
 aside .image-text .profession {
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: 300;
   margin-top: -2px;
   display: block;
 }
@@ -220,6 +221,7 @@ body.dark .sidebar aside .toggle {
   background-color: var(--body-color);
   transition: var(--tran-05);
 }
+
 .home .text {
   font-size: 30px;
   font-weight: 500;
@@ -231,4 +233,23 @@ body.dark .sidebar aside .toggle {
   left: 78px;
   height: 100vh;
   width: calc(100% - 78px);
+}
+
+#modify-infos {
+  padding-top: 100px;
+  text-align: center;
+}
+
+#modify-infos button:focus {
+  display: none;
+}
+
+#users table {
+  text-align: center;
+}
+
+#users button {
+  display: block;
+  margin-left: auto;
+  margin-right: 250px;
 }
