@@ -1,243 +1,234 @@
-header{
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    
+header {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Open+Sans:wght@300&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
-:root{
-    /* ===== Colors ===== */
-    --body-color: #E4E9F7;
-    --sidebar-color: #FFF;
-    --primary-color:#15A3EF;
+:root {
+  /* ===== Colors ===== */
+  --body-color: #e4e9f7;
+  --sidebar-color: #fff;
+  --primary-color: #15a3ef;
 
-    --primary-color-light: #F6F5FF;
-    --toggle-color: #DDD;
-    --text-color: #707070;
+  --primary-color-light: #f6f5ff;
+  --toggle-color: #ddd;
+  --text-color: #707070;
 
-    /* ====== Transition ====== */
-    --tran-03: all 0.2s ease;
-    --tran-03: all 0.3s ease;
-    --tran-04: all 0.3s ease;
-    --tran-05: all 0.3s ease;
+  /* ====== Transition ====== */
+  --tran-03: all 0.2s ease;
+  --tran-03: all 0.3s ease;
+  --tran-04: all 0.3s ease;
+  --tran-05: all 0.3s ease;
 }
 
-
-
-::selection{
-    background-color: var(--primary-color);
-    color: #fff;
+::selection {
+  background-color: var(--primary-color);
+  color: #fff;
 }
-
-
-
 
 /* ===== Sidebar ===== */
- .sidebar{
-    position: fixed;
-    top: 86px;
-    left: 0;
-    height: 100%;
-    width: 250px;
-    padding: 10px 14px;
-    background: white;
-    transition: var(--tran-05);
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    z-index: 100;  
+.sidebar {
+  position: fixed;
+  top: 86px;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  padding: 10px 14px;
+  background: white;
+  transition: var(--tran-05);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  z-index: 100;
 }
-.sidebar.close{
-    width: 88px;
-    opacity: 18;
-    
+.sidebar.close {
+  width: 88px;
+  opacity: 18;
 }
 
-.sidebar li{
-    height: 62px;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
+.sidebar li {
+  height: 62px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
 }
 
 .sidebar aside .image,
-.sidebar .icon{
-    min-width: 60px;
-    border-radius: 6px;
+.sidebar .icon {
+  min-width: 60px;
+  border-radius: 6px;
 }
 
-.sidebar .icon{
-    min-width: 60px;
-    border-radius: 6px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-   
-    font-size: 26px;
+.sidebar .icon {
+  min-width: 60px;
+  border-radius: 6px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+  font-size: 26px;
 }
 
 .sidebar .text,
-.sidebar .icon{
-    color: var(--text-color);
-    transition: var(--tran-03);
+.sidebar .icon {
+  color: var(--text-color);
+  transition: var(--tran-03);
 }
 
-.sidebar .text{
-    font-size: 17px;
-    font-weight: 500;
-    white-space: nowrap;
-    opacity: 1;
+.sidebar .text {
+  font-size: 17px;
+  font-weight: 500;
+  white-space: nowrap;
+  opacity: 1;
 }
-.sidebar.close .text{
-    opacity: 0;
+.sidebar.close .text {
+  opacity: 0;
 }
 /* =========================== */
 
-.sidebar aside{
-    position: relative;
+.sidebar aside {
+  position: relative;
 }
 
-.sidebar aside .image-text{
-    display: flex;
-    align-items: center;
+.sidebar aside .image-text {
+  display: flex;
+  align-items: center;
 }
-.sidebar aside .logo-text{
-    display: flex;
-    flex-direction: column;
+.sidebar aside .logo-text {
+  display: flex;
+  flex-direction: column;
 }
 aside .image-text .name {
-    margin-top: 2px;
-    font-size: 18px;
-    font-weight: 600;
+  margin-top: 2px;
+  font-size: 18px;
+  font-weight: 600;
 }
 
-aside .image-text .profession{
-    font-size: 16px;
-    margin-top: -2px;
-    display: block;
+aside .image-text .profession {
+  font-size: 16px;
+  margin-top: -2px;
+  display: block;
 }
 
-.sidebar aside .image{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.sidebar aside .image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.sidebar aside .image img{
-    width: 40px;
-    border-radius: 6px;
+.sidebar aside .image img {
+  width: 40px;
+  border-radius: 6px;
 }
 
-.sidebar aside .toggle{
-    position: absolute;
-    top: 50%;
-    right: -25px;
-    transform: translateY(-50%) rotate(180deg);
-    height: 25px;
-    width: 25px;
-    background-color: var(--primary-color);
-    color: var(--sidebar-color);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 22px;
-    cursor: pointer;
-    transition: var(--tran-05);
+.sidebar aside .toggle {
+  position: absolute;
+  top: 50%;
+  right: -25px;
+  transform: translateY(-50%) rotate(180deg);
+  height: 25px;
+  width: 25px;
+  background-color: var(--primary-color);
+  color: var(--sidebar-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  cursor: pointer;
+  transition: var(--tran-05);
 }
 
-body.dark .sidebar aside .toggle{
-    color: var(--text-color);
+body.dark .sidebar aside .toggle {
+  color: var(--text-color);
 }
 
-.sidebar.close .toggle{
-    transform: translateY(-50%) rotate(0deg);
+.sidebar.close .toggle {
+  transform: translateY(-50%) rotate(0deg);
 }
 
-.sidebar .menu{
-    margin-top: 40px;
+.sidebar .menu {
+  margin-top: 40px;
 }
 
-.sidebar li.search-box{
-    border-radius: 6px;
-    background-color: var(--primary-color-light);
-    cursor: pointer;
-    transition: var(--tran-05);
+.sidebar li.search-box {
+  border-radius: 6px;
+  background-color: var(--primary-color-light);
+  cursor: pointer;
+  transition: var(--tran-05);
 }
 
-.sidebar li.search-box input{
-    height: 100%;
-    width: 100%;
-    outline: none;
-    border: none;
-    background-color: var(--primary-color-light);
-    color: var(--text-color);
-    border-radius: 6px;
-    font-size: 17px;
-    font-weight: 500;
-    transition: var(--tran-05);
+.sidebar li.search-box input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: var(--primary-color-light);
+  color: var(--text-color);
+  border-radius: 6px;
+  font-size: 17px;
+  font-weight: 500;
+  transition: var(--tran-05);
 }
-.sidebar li a{
-    list-style: none;
-    height: 100%;
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    border-radius: 6px;
-    text-decoration: none;
-    transition: var(--tran-03);
+.sidebar li a {
+  list-style: none;
+  height: 100%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: var(--tran-03);
 }
 
-.sidebar li:hover{
-    background-color: #15a3ef49;
-    width: 100%;
-    border-radius: 14px;
-    
+.sidebar li:hover {
+  background-color: #15a3ef49;
+  width: 100%;
+  border-radius: 14px;
 }
 .sidebar li a:hover .icon,
-.sidebar li a:hover .text{
-    color: #15A3EF;
+.sidebar li a:hover .text {
+  color: #15a3ef;
 }
 
-
-.sidebar .menu-bar{
-    height: calc(100% - 55px);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    overflow-y: scroll;
+.sidebar .menu-bar {
+  height: calc(100% - 55px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: scroll;
 }
-.menu-bar::-webkit-scrollbar{
-    display: none;
-}
-
-
-.home{
-    position: absolute;
-    top: 0;
-    top: 0;
-    left: 250px;
-    height: 100vh;
-    width: calc(100% - 250px);
-    background-color: var(--body-color);
-    transition: var(--tran-05);
-}
-.home .text{
-    font-size: 30px;
-    font-weight: 500;
-    color: var(--text-color);
-    padding: 12px 60px;
+.menu-bar::-webkit-scrollbar {
+  display: none;
 }
 
-.sidebar.close ~ .home{
-    left: 78px;
-    height: 100vh;
-    width: calc(100% - 78px);
+.home {
+  position: absolute;
+  top: 0;
+  top: 0;
+  left: 250px;
+  height: 100vh;
+  width: calc(100% - 250px);
+  background-color: var(--body-color);
+  transition: var(--tran-05);
+}
+.home .text {
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--text-color);
+  padding: 12px 60px;
+}
+
+.sidebar.close ~ .home {
+  left: 78px;
+  height: 100vh;
+  width: calc(100% - 78px);
 }
