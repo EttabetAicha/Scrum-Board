@@ -241,3 +241,96 @@ body.dark .sidebar aside .toggle{
     height: 100vh;
     width: calc(100% - 78px);
 }
+/* ===================================== Board ===================================== */
+.Board-centered {
+    position: relative;
+    top: 120px;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    height: 100vh;
+    margin: 0;
+}
+.shiftedText{
+    color: #6C6C6C;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.BoldText{
+    color: #172B4D;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.search-input{
+    width: 200px;
+    height: 48px;
+    /* display: flex; */
+    border: 2px solid rgba(0, 0, 0, 0.30);
+
+    border-radius: 10px;
+    padding: 5px;
+    outline: none;
+    margin: 0px;
+    padding-left: 30px;
+
+}
+.search-input-container {
+    position: relative;
+    margin: 0px;
+    width: 200px;
+}
+
+.search-icon {
+    position: absolute;
+    left: 88%;
+    top: 50%;
+    margin-top: -10px;
+    color: #777;
+}
+.search-bar{
+    width: 200px;
+    margin: 0px;
+}
+.profiles{
+    /* position: absolute; */
+    display: flex;
+}
+.c1{
+    background-color: #15A3EF;
+}
+.c2{
+    background-color: purple;
+}
+.ProfileSercle{
+    /* position: relative;
+    left: 5px; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6C6C6C;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+.ProfileSercle .shiftedText{
+    margin-top: 15px;
+    color: #FFF;
+    font-size: 20px;
+}
+.searchBarAndProfiles{
+    display: flex;
+    gap: 5px;
+}
+.Board-centered-top{
+    display: flex;
+    justify-content: space-between;
+}
+.Board-settings{
+    display: flex;
+    gap: 10px;
+}
