@@ -4,3 +4,4 @@ toggle = body.querySelector(".toggle")
 toggle.addEventListener("click" , () =>{
 sidebar.classList.toggle("close");
 })
+document.body.style.overflow = "hidden";
