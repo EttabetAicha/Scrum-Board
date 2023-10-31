@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <header style="position: fixed;width: 100%;">
+    <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
             <a class="navbar-brand" href="#">
                 <img src="../images/logo.png" alt="Logo" width="200">
@@ -39,7 +39,7 @@
                         </div>
                     </li>
                     <li class="nav-item dropdown mx-3">
-                        <a class="nav-link dropdown-toggle" href="#" id="projectsDropdown" role="button"
+                        <a class="nav-link dropdown-toggle" href="#" id="projectsDropdown" role of "button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
                             style="color: rgb(0, 132, 255); border-bottom: 1px solid rgb(0, 132, 255) ;">
                             Projects
@@ -68,186 +68,302 @@
             </ul>
         </nav>
     </header>
+    <main>
+        <nav class="sidebar close ">
+            <aside>
+                <div class="image-text" style="  padding-bottom: 21px;">
+                    <span class="image">
+                        <img src="../images/image 3.png" alt="">
+                    </span>
+                    <div class="text logo-text">
+                        <span class="name">Nameprojects</span>
+                        <span class="profession">Software project</span>
+                    </div>
+                </div>
+                <i class='bx bx-chevron-right toggle'></i>
+            </aside>
 
-    <nav class="sidebar close">
-        <aside style="border-bottom: 1px solid rgba(128, 128, 128, 0.315); ">
-            <div class="image-text" style="padding-bottom: 21px;">
-                <span class="image">
-                    <img src="../images/image 3.png" alt="">
-                </span>
-                <div class="text logo-text">
-                    <span class="name">Nameprojects</span>
-                    <span class="profession">Software project</span>
+            <div class="menu-bar">
+                <div class="menu">
+                    <ul class="menu-links">
+                        <li class="nav-link">
+                            <a href="#">
+                                <i class='bx bx-time icon'></i>
+                                <span class="text nav-text">Timeline</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-link">
+                            <a href="#">
+                                <i class='bx bx-list-plus icon'></i>
+                                <span class="text nav-text">Backlog</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-link">
+                            <a href="#">
+                                <i class='bx bxs-dashboard icon'></i>
+                                <span class="text nav-text">Board</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-link">
+                            <a href="#">
+                                <i class='bx bx-cog icon'></i>
+                                <span class="text nav-text">Projects Settings</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+        </nav>
+        <section id="modify-infos">
+            <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none">
+                <g clip-path="url(#clip0_28_3)">
+                    <path d="M128 0H0V128H128V0Z" fill="#FF5630" />
+                    <path
+                        d="M80.0391 20.27C79.7871 20.086 79.5001 19.951 79.1891 19.87C79.1121 19.837 79.0391 19.796 78.9621 19.763C78.7921 19.798 78.6741 19.779 78.5511 19.779C77.1501 19.779 76.0141 20.915 76.0141 22.316C76.0141 22.439 76.0331 22.557 76.0501 22.675L76.0141 52.683C76.0141 53.58 75.5941 54.425 74.8801 54.966L65.7211 61.908C64.7031 62.679 63.7471 61.908 63.7471 61.908L54.5881 54.966C53.8731 54.424 53.4531 53.579 53.4531 52.683V22.438C53.4531 20.915 52.3171 19.779 50.9161 19.779C50.2691 19.779 49.6841 20.029 49.2361 20.428C37.0581 26.248 28.6221 38.635 28.6221 53.032C28.6221 64.306 33.7821 74.374 41.8671 81.007C42.2691 81.337 42.6751 81.655 43.0871 81.965C45.3801 83.967 50.1101 89.169 50.1101 98.036V128.459C54.5711 129.444 59.2011 128.98 63.9591 128.98C69.3091 128.98 74.5021 130.313 79.4691 129.076V97.516C79.6501 89.158 84.0271 84.147 86.3211 82.097C95.2051 75.506 100.964 64.942 100.964 53.031C100.964 38.511 92.3871 26.025 80.0391 20.27Z"
+                        fill="#F0F4F7" />
+                    <path
+                        d="M63.9589 127.982C65.6079 127.982 67.2359 127.898 68.8519 127.774V98.765C68.8519 96.533 67.0259 94.706 64.7929 94.706C62.5609 94.706 60.7339 96.532 60.7339 98.765V127.892C61.8029 127.946 62.8759 127.982 63.9589 127.982Z"
+                        fill="#BACBD6" />
+                    <path
+                        d="M64.7292 87.155C68.979 87.155 72.4242 83.7098 72.4242 79.46C72.4242 75.2102 68.979 71.765 64.7292 71.765C60.4793 71.765 57.0342 75.2102 57.0342 79.46C57.0342 83.7098 60.4793 87.155 64.7292 87.155Z"
+                        fill="#BACBD6" />
+                    <path opacity="0.2"
+                        d="M80.0389 20.28C79.7869 20.096 79.4999 19.961 79.1889 19.88C79.1119 19.847 79.0389 19.806 78.9619 19.773C78.7919 19.808 78.6739 19.789 78.5509 19.789C77.1499 19.789 76.0139 20.925 76.0139 22.326C76.0139 22.449 76.0329 22.567 76.0499 22.685L76.0139 52.693C76.0139 53.59 75.5939 54.435 74.8799 54.976L65.7209 61.918C65.3939 62.166 65.0779 62.245 64.7939 62.251V127.969C69.8489 127.904 74.7619 130.259 79.4699 129.086V97.526C79.6509 89.168 84.0279 84.157 86.3219 82.107C95.2059 75.516 100.965 64.952 100.965 53.041C100.964 38.522 92.3869 26.035 80.0389 20.28Z"
+                        fill="#00425B" />
+                </g>
+                <defs>
+                    <clipPath id="clip0_28_3">
+                        <rect width="128" height="128" fill="white" />
+                    </clipPath>
+                </defs>
+            </svg>
+            <br>
+            <br>
+            <form class="mx-auto">
+                <div class="custom-file mb-3 col-sm-2 text-left mx-auto">
+                    <input type="file" class="custom-file-input" id="image">
+                    <label class="custom-file-label text-black-50" for="image">Change image...</label>
+                    <div class="invalid-feedback">Example invalid custom file feedback</div>
+                </div>
+                <div class="mb-3 col-sm-3 text-left mx-auto">
+                    <label for="name" class="text-black-50 font-weight-bold">Name</label>
+                    <input type="text" class="form-control text-black-50" id="name" name="name"
+                        placeholder="Enter the name of the project">
+                    <div class="invalid-feedback">
+                        Please enter a valid name.
+                    </div>
+                </div>
+                <div class="mb-3 col-sm-3 text-left mx-auto">
+                    <label for="description" class="text-black-50 font-weight-bold">Description</label>
+                    <textarea class="form-control text-black-50" id="description"
+                        placeholder="The description of the project ..."></textarea>
+                    <div class="invalid-feedback">
+                        Please enter a valid description.
+                    </div>
+                </div>
+                <button class="btn btn-light text-black-50 font-weight-bold px-6" type="submit">Save</button>
+            </form>
+        </section>
+
+        <section id="users">
+            <button class="btn py-1 rounded" data-toggle="modal" data-target="#addPeople"
+                style="background: #2887f3; color: aliceblue;">
+                + Add users
+            </button>
+            <br>
+            <div class="table-responsive-sm">
+                <table class="table text-center w-75 mx-auto">
+                    <thead>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col" class="text-black-50">Name</th>
+                            <th scope="col" class="text-black-50">Email</th>
+                            <th scope="col" class="text-black-50">Role</th>
+                            <th scope="col" class="text-black-50">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-center" style="color: #4F4B4B;">
+                        <tr>
+                            <th scope="row"><img src="/images/avatar1.png"></th>
+                            <td>Jane Doe</td>
+                            <td>jane.doe@email.com</td>
+                            <td>Administrator</td>
+                            <td>
+                                <svg class="feather feather-edit" data-toggle="modal" data-target="#editUser"
+                                    fill="#85B6FF" height="20" stroke="currentColor" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
+                                    <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z" />
+                                </svg>
+                                <svg data-toggle="modal" data-target="#deleteUser" fill="#F24E1E" height="24"
+                                    viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z" />
+                                    <path d="M0 0h48v48H0z" fill="none" />
+                                </svg>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><img src="/images/avatar2.png"></th>
+                            <td>John Doe</td>
+                            <td>john.doe@email.com</td>
+                            <td>Administrator</td>
+                            <td>
+                                <svg class="feather feather-edit" data-toggle="modal" data-target="#editUser"
+                                    fill="#85B6FF" height="20" stroke="currentColor" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
+                                    <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z" />
+                                </svg>
+                                <svg data-toggle="modal" data-target="#deleteUser" fill="#F24E1E" height="24"
+                                    viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z" />
+                                    <path d="M0 0h48v48H0z" fill="none" />
+                                </svg>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><img src="/images/avatar2.png"></th>
+                            <td>John Doe</td>
+                            <td>john.doe@email.com</td>
+                            <td>Administrator</td>
+                            <td>
+                                <svg class="feather feather-edit" data-toggle="modal" data-target="#editUser"
+                                    fill="#85B6FF" height="20" stroke="currentColor" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
+                                    <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z" />
+                                </svg>
+                                <svg data-toggle="modal" data-target="#deleteUser" fill="#F24E1E" height="24"
+                                    viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z" />
+                                    <path d="M0 0h48v48H0z" fill="none" />
+                                </svg>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <div class="modal fade" id="addPeople" tabindex="-1" aria-labelledby="addPeopleLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="addPeopleLabel">+ Add people</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="mx-auto">
+                            <div class="mb-3 text-left mx-auto">
+                                <label for="name" class="text-black-50 font-weight-bold">Name</label>
+                                <input type="text" class="form-control text-black-50" id="name" name="name"
+                                    placeholder="Enter the name of the user">
+                                <div class="invalid-feedback">
+                                    Please enter a valid name.
+                                </div>
+                            </div>
+                            <div class="mb-3 text-left mx-auto">
+                                <label for="email" class="text-black-50 font-weight-bold">Email</label>
+                                <input type="email" class="form-control text-black-50" id="email" name="email"
+                                    placeholder="Enter the email of the user">
+                                <div class="invalid-feedback">
+                                    Please enter a valid email.
+                                </div>
+                            </div>
+                            <div class="mb-3 text-left mx-auto">
+                                <label for="role" class="text-black-50 font-weight-bold">Role</label>
+                                <select class="custom-select">
+                                    <option selected>Select a role for the user ..</option>
+                                    <option value="1">Administrator</option>
+                                    <option value="2">Administrator</option>
+                                    <option value="3">Administrator</option>
+                                </select>
+                            </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-outline-primary">Save</button>
+                    </div>
+                    </form>
                 </div>
             </div>
-
-            <i class='bx bx-chevron-right toggle'></i>
-        </aside>
-
-        <div class="menu-bar">
-            <div class="menu">
-                <ul class="menu-links">
-                    <li class="nav-link">
-                        <a href="#">
-                            <i class='bx bx-time icon'></i>
-                            <span class="text nav-text">Timeline</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-link">
-                        <a href="#">
-                            <i class='bx bx-list-plus icon'></i>
-                            <span class="text nav-text">Backlog</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-link">
-                        <a href="#">
-                            <i class='bx bxs-dashboard icon'></i>
-                            <span class="text nav-text">Board</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-link">
-                        <a href="#">
-                            <i class='bx bx-cog icon'></i>
-                            <span class="text nav-text">Projects Settings</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-    </nav>
-
-    <section id="modify-infos">
-        <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none">
-            <g clip-path="url(#clip0_28_3)">
-                <path d="M128 0H0V128H128V0Z" fill="#FF5630" />
-                <path
-                    d="M80.0391 20.27C79.7871 20.086 79.5001 19.951 79.1891 19.87C79.1121 19.837 79.0391 19.796 78.9621 19.763C78.7921 19.798 78.6741 19.779 78.5511 19.779C77.1501 19.779 76.0141 20.915 76.0141 22.316C76.0141 22.439 76.0331 22.557 76.0501 22.675L76.0141 52.683C76.0141 53.58 75.5941 54.425 74.8801 54.966L65.7211 61.908C64.7031 62.679 63.7471 61.908 63.7471 61.908L54.5881 54.966C53.8731 54.424 53.4531 53.579 53.4531 52.683V22.438C53.4531 20.915 52.3171 19.779 50.9161 19.779C50.2691 19.779 49.6841 20.029 49.2361 20.428C37.0581 26.248 28.6221 38.635 28.6221 53.032C28.6221 64.306 33.7821 74.374 41.8671 81.007C42.2691 81.337 42.6751 81.655 43.0871 81.965C45.3801 83.967 50.1101 89.169 50.1101 98.036V128.459C54.5711 129.444 59.2011 128.98 63.9591 128.98C69.3091 128.98 74.5021 130.313 79.4691 129.076V97.516C79.6501 89.158 84.0271 84.147 86.3211 82.097C95.2051 75.506 100.964 64.942 100.964 53.031C100.964 38.511 92.3871 26.025 80.0391 20.27Z"
-                    fill="#F0F4F7" />
-                <path
-                    d="M63.9589 127.982C65.6079 127.982 67.2359 127.898 68.8519 127.774V98.765C68.8519 96.533 67.0259 94.706 64.7929 94.706C62.5609 94.706 60.7339 96.532 60.7339 98.765V127.892C61.8029 127.946 62.8759 127.982 63.9589 127.982Z"
-                    fill="#BACBD6" />
-                <path
-                    d="M64.7292 87.155C68.979 87.155 72.4242 83.7098 72.4242 79.46C72.4242 75.2102 68.979 71.765 64.7292 71.765C60.4793 71.765 57.0342 75.2102 57.0342 79.46C57.0342 83.7098 60.4793 87.155 64.7292 87.155Z"
-                    fill="#BACBD6" />
-                <path opacity="0.2"
-                    d="M80.0389 20.28C79.7869 20.096 79.4999 19.961 79.1889 19.88C79.1119 19.847 79.0389 19.806 78.9619 19.773C78.7919 19.808 78.6739 19.789 78.5509 19.789C77.1499 19.789 76.0139 20.925 76.0139 22.326C76.0139 22.449 76.0329 22.567 76.0499 22.685L76.0139 52.693C76.0139 53.59 75.5939 54.435 74.8799 54.976L65.7209 61.918C65.3939 62.166 65.0779 62.245 64.7939 62.251V127.969C69.8489 127.904 74.7619 130.259 79.4699 129.086V97.526C79.6509 89.168 84.0279 84.157 86.3219 82.107C95.2059 75.516 100.965 64.952 100.965 53.041C100.964 38.522 92.3869 26.035 80.0389 20.28Z"
-                    fill="#00425B" />
-            </g>
-            <defs>
-                <clipPath id="clip0_28_3">
-                    <rect width="128" height="128" fill="white" />
-                </clipPath>
-            </defs>
-        </svg>
-        <br>
-        <br>
-        <form class="mx-auto">
-            <div class="custom-file mb-3 col-sm-2 text-left mx-auto">
-                <input type="file" class="custom-file-input" id="image">
-                <label class="custom-file-label text-black-50" for="image">Change image...</label>
-                <div class="invalid-feedback">Example invalid custom file feedback</div>
-            </div>
-            <div class="mb-3 col-sm-3 text-left mx-auto">
-                <label for="name" class="text-black-50 font-weight-bold">Name</label>
-                <input type="text" class="form-control text-black-50" id="name" name="name"
-                    placeholder="Enter the name of the project">
-                <div class="invalid-feedback">
-                    Please enter a valid name.
+        </div>
+        <div class="modal fade" id="editUser" tabindex="-1" aria-labelledby="editUserLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="editUserLabel">Edit User</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="mx-auto">
+                            <div class="mb-3 text-left mx-auto">
+                                <label for="name" class="text-black-50 font-weight-bold">Name</label>
+                                <input type="text" class="form-control text-black-50" id="name" name="name"
+                                    value="John Doe">
+                                <div class="invalid-feedback">
+                                    Please enter a valid name.
+                                </div>
+                            </div>
+                            <div class="mb-3 text-left mx-auto">
+                                <label for="email" class="text-black-50 font-weight-bold">Email</label>
+                                <input type="email" class="form-control text-black-50" id="email" name="email"
+                                    value="john.doe@email.com">
+                                <div class="invalid-feedback">
+                                    Please enter a valid email.
+                                </div>
+                            </div>
+                            <div class="mb-3 text-left mx-auto">
+                                <label for="role" class="text-black-50 font-weight-bold">Role</label>
+                                <select class="custom-select">
+                                    <option value="1" selected>Administrator</option>
+                                    <option value="2">Administrator</option>
+                                    <option value="3">Administrator</option>
+                                </select>
+                            </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-outline-primary">Save</button>
+                    </div>
+                    </form>
                 </div>
             </div>
-            <div class="mb-3 col-sm-3 text-left mx-auto">
-                <label for="description" class="text-black-50 font-weight-bold">Description</label>
-                <textarea class="form-control text-black-50" id="description"
-                    placeholder="The description of the project ..."></textarea>
-                <div class="invalid-feedback">
-                    Please enter a valid description.
+        </div>
+        <div class="modal fade" id="deleteUser" tabindex="-1" aria-labelledby="deleteUserLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="deleteUserLabel">Delete User</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Are you sure you want to delete this user?</p>
+                        <br>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-danger" id="confirmDeleteUser">Delete</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <button class="btn btn-light mb-3 text-black-50 font-weight-bold px-6" type="submit">Save</button>
-        </form>
-    </section>
-
-    <section id="users" style="margin-left: 50px;">
-        <button class="btn py-1 rounded" style="background: #2887f3; color: aliceblue;">+ Add
-            people</button>
-        <br>
-        <table class="table text-center w-75 mx-auto">
-            <thead>
-                <tr>
-                    <th scope="col"></th>
-                    <th scope="col" class="text-black-50">Name</th>
-                    <th scope="col" class="text-black-50">Email</th>
-                    <th scope="col" class="text-black-50">Role</th>
-                    <th scope="col" class="text-black-50">Action</th>
-                </tr>
-            </thead>
-            <tbody class="text-center" style="color: #4F4B4B;">
-                <tr>
-                    <th scope="row"><img src="/images/avatar1.png"></th>
-                    <td>Jane Doe</td>
-                    <td>jane.doe@email.com</td>
-                    <td>Administrator</td>
-                    <td>
-                        <svg class="feather feather-edit" fill="#85B6FF" height="20" stroke="currentColor"
-                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
-                            width="24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
-                            <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z" />
-                        </svg>
-                        <svg fill="#F24E1E" height="24" viewBox="0 0 48 48" width="48"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z" />
-                            <path d="M0 0h48v48H0z" fill="none" />
-                        </svg>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row"><img src="/images/avatar2.png"></th>
-                    <td>John Doe</td>
-                    <td>john.doe@email.com</td>
-                    <td>Administrator</td>
-                    <td>
-                        <svg class="feather feather-edit" fill="#85B6FF" height="20" stroke="currentColor"
-                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
-                            width="24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
-                            <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z" />
-                        </svg>
-                        <svg fill="#F24E1E" height="24" viewBox="0 0 48 48" width="48"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z" />
-                            <path d="M0 0h48v48H0z" fill="none" />
-                        </svg>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row"><img src="/images/avatar2.png"></th>
-                    <td>John Doe</td>
-                    <td>john.doe@email.com</td>
-                    <td>Administrator</td>
-                    <td>
-                        <svg class="feather feather-edit" fill="#85B6FF" height="20" stroke="currentColor"
-                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
-                            width="24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
-                            <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z" />
-                        </svg>
-                        <svg fill="#F24E1E" height="24" viewBox="0 0 48 48" width="48"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z" />
-                            <path d="M0 0h48v48H0z" fill="none" />
-                        </svg>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-
+        </div>
+    </main>
     <script src="../js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
