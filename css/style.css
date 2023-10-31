@@ -268,7 +268,6 @@ body.dark .sidebar aside .toggle {
 /* ===================================== Board ===================================== */
 .Board-centered {
     padding: 40px;
-    overflow: auto;
     width: 100%;
     top: 120px;
     height: 100vh;
@@ -391,4 +390,80 @@ body.dark .sidebar aside .toggle {
 
 .icon {
     color: #A3A1A1;
+}
+.BookMarkProperties{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+}
+.list{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    margin-top: 5px;
+    border-radius: 5px;
+    background: rgba(227, 227, 227, 0.35);
+    width: 285px;
+    
+    padding: 2px;
+    max-height: 900px;
+}
+.list-content{
+    overflow: auto;
+    width: 280px;
+    height: 350px;
+}
+.List-Head{
+    
+    display: flex;
+    align-items: center;
+    padding: 12px;
+
+}
+.List-HeadText{
+    text-align: center;
+    margin: 0px;
+    margin-left: 5px;
+    color: rgba(108, 108, 108, 0.74);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.cardheight{
+    width: 250px;
+    height: 160px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #6F7A8E;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.list-content .ProfileSercle {
+    margin-top: -5px;
+}
+.Board-centered-buttom{
+display: flex;
+gap: 10px;
+margin-top: 5px;
+}
+.plus{
+    margin-top: 5px;
+    outline: none;
+}
+.Add-board{
+    visibility: hidden;
+    height: 40px;
+}
+.Add-board img{
+    visibility: visible;
 }
