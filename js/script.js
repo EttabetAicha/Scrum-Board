@@ -11,8 +11,9 @@ let inp = document.getElementById("inputValu");
 let bx_test = document.getElementById("bx_test");
 
 let boxs = document.querySelectorAll(".your_sprint");
-
 let drag = null;
+let empty = document.getElementById("paragra");
+
 plus.onclick = function () {
   if (inp.value != "") {
     bx_test.innerHTML += `<p class="item"  draggable="true">${inp.value}</p>`;
@@ -81,6 +82,7 @@ function dragItem() {
         this.append(drag);
         this.style.background = "white ";
         this.style.color = "rgba(0, 0, 0, 0.721)";
+        empty.style.display = "none";
       });
     });
   });
