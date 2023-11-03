@@ -99,3 +99,8 @@ function updateUser() {
   $("#editUser").modal("hide");
   return false;
 }
+
+function changePicture(event) {
+  var image = document.getElementById("project-avatar");
+  image.src = URL.createObjectURL(event.target.files[0]);
+}
