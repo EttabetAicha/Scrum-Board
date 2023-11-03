@@ -95,6 +95,36 @@
 
             
         </div>
+        
+    </div>
+    <div class="board-BgLayer1">
+        
+        <div class="board-addList">
+            
+                <div class="d-flex justify-content-between board-text-header-popup">
+                    <p class="shiftedText ">
+                        Projects / Scrum Board
+                    </p>
+                    
+                    <button class="close-board-popup">
+                        <i class="fa-solid fa-circle-xmark visible"></i>
+                    </button>
+                </div>
+                <p class="BoldText">
+                    Add new list
+                    </p>
+                
+                    <div class="d-flex justify-content-between w-100">
+                        <input class="form-control form-control-lg ml-2 mr-2" type="text" placeholder="Type the list Name...">
+                        <button class="submitButton">
+                            Submit
+                        </button>
+
+                    </div>
+    
+                
+            
+        </div>
     </div>
     <header >
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
@@ -236,9 +266,9 @@
 
                 </div>
                 <div class="settingContainer">
-                    <div class="Board-settings">
+                    <div class="Board-settings" onclick="openP()">
                         <i class="fa-solid fa-sliders icon"></i>
-                        <p class="visiblity-par">View settings</p>
+                        <p class="visiblity-par" >View settings</p>
                       </div>
                 </button>
                     
@@ -327,7 +357,7 @@
                 </div> 
                 <div  class="list shadow-sm">
                     <div class="List-Head">
-                        <p class="List-HeadText">To do</p>
+                        <p class="List-HeadText">Doing</p>
                     </div>
                     <div id="sortable2" class="sortable-list list-content">
                         <div class="ui-state-default card mb-1 mt-1 shadow-sm cardheight">
@@ -402,7 +432,7 @@
                 </div>
                 <div class="list shadow-sm">
                     <div class="List-Head">
-                        <p class="List-HeadText">To do</p>
+                        <p class="List-HeadText">Done</p>
                     </div>
                     <div id="sortable3" class="sortable-list list-content">
                         <div class="ui-state-default card mb-1 mt-1 shadow-sm cardheight">
