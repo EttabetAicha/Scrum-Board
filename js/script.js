@@ -5,57 +5,40 @@ toggle.addEventListener("click", () => {
   sidebar.classList.toggle("close");
 });
 // -----------------------------------------------------------------
-let para = document.getElementsByClassName("para");
+// let para = document.getElementsByClassName("para");
 let plus = document.getElementById("plus");
-let inp = document.getElementById("inputValu");
-let bx_test = document.getElementById("bx_test");
-
+let inp = document.getElementById("inputValue");
 let boxs = document.querySelectorAll(".your_sprint");
+let bx_test = document.getElementById("bx_test");
 let drag = null;
 let empty = document.getElementById("paragra");
-
 plus.onclick = function () {
   if (inp.value != "") {
-    bx_test.innerHTML += `<p class="item"  draggable="true">${inp.value}</p>`;
+    bx_test.innerHTML += `
+    
+    <p class="item" draggable="true" >
+    <span>  
+    <input type="checkbox">
+    <i class='bx bx-bookmarks' style='color:green' ></i>
+    ${inp.value}  
+    <i id="pen" class="fa-solid fa-pen"></i>
+    </span>
+    <span class="btn-group">
+  <button   class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Small button
+  </button>
+  <ul class="dropdown-menu">
+    
+  </ul>
+</span>
+
+
+    </p>
+   `;
     inp.value = "";
   }
   dragItem();
 };
-// input
-function toggleElement() {
-  var element = document.getElementById("myElement");
-
-  if (element.style.display === "none") {
-    // If the element is currently hidden, show it
-    element.style.display = "block"; // or any other appropriate display value
-  } else {
-    // If the element is currently visible, hide it
-    element.style.display = "none";
-  }
-}
-function aficher() {
-  let items = document.getElementById("bx_test");
-  if (items.style.display === "none") {
-    // If the element is currently hidden, show it
-    items.style.display = "block"; // or any other appropriate display value
-  } else {
-    // If the element is currently visible, hide it
-    items.style.display = "none";
-  }
-}
-
-function shin() {
-  let sin = document.getElementById("your_sprint");
-  if (sin.style.display === "none") {
-    // If the element is currently hidden, show it
-    sin.style.display = "block"; // or any other appropriate display value
-  } else {
-    // If the element is currently visible, hide it
-    sin.style.display = "none";
-  }
-}
-
-//_______________________________drag and drop______________
 function dragItem() {
   let items = document.querySelectorAll(".item");
   items.forEach((item) => {
@@ -86,4 +69,31 @@ function dragItem() {
       });
     });
   });
+}
+
+// input
+function toggleElement() {
+  var element = document.getElementById("myElement");
+
+  if (element.style.display === "none") {
+    element.style.display = "block";
+  } else {
+    element.style.display = "none";
+  }
+}
+function aficher() {
+  let items = document.getElementById("bx_test");
+  if (items.style.display === "none") {
+    items.style.display = "block";
+  } else {
+    items.style.display = "none";
+  }
+}
+function shin() {
+  let sin = document.getElementById("your_sprint");
+  if (sin.style.display === "none") {
+    sin.style.display = "block";
+  } else {
+    sin.style.display = "none";
+  }
 }
