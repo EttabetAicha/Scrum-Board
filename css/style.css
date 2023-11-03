@@ -53,33 +53,41 @@ header {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     z-index: 100;
 }
+.close {
+  float: right;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+}
 
 .close {
     float: left;
-    opacity: 99;
 }
-.close:not(:disabled):not(.disabled):focus, .close:not(:disabled):not(.disabled):hover {
-    opacity: .75;
+.close:not(:disabled):not(.disabled):focus,
+.close:not(:disabled):not(.disabled):hover {
+  opacity: 0.75;
 }
 
 .sidebar.close {
     width: 88px;
-  
+    opacity: 1;
 
 }
 
 .sidebar li {
-    height: 62px;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
+  height: 62px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
 }
 
 .sidebar aside .image,
 .sidebar .icon {
-    min-width: 60px;
-    border-radius: 6px;
+  min-width: 60px;
+  border-radius: 6px;
 }
 
 .sidebar .icon {
@@ -166,10 +174,6 @@ aside .image-text .profession {
     transition: var(--tran-05);
 }
 
-body.dark .sidebar aside .toggle {
-    color: var(--text-color);
-}
-
 .main {
     display: flex;
 }
@@ -189,17 +193,18 @@ body.dark .sidebar aside .toggle {
     transition: var(--tran-05);
 }
 
+
 .sidebar li.search-box input {
-    height: 100%;
-    width: 100%;
-    outline: none;
-    border: none;
-    background-color: var(--primary-color-light);
-    color: var(--text-color);
-    border-radius: 6px;
-    font-size: 17px;
-    font-weight: 500;
-    transition: var(--tran-05);
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: var(--primary-color-light);
+  color: var(--text-color);
+  border-radius: 6px;
+  font-size: 17px;
+  font-weight: 500;
+  transition: var(--tran-05);
 }
 
 .sidebar li a {
@@ -208,7 +213,6 @@ body.dark .sidebar aside .toggle {
     background-color: transparent;
     display: flex;
     align-items: center;
-    height: 100%;
     width: 100%;
     border-radius: 6px;
     text-decoration: none;
@@ -267,11 +271,12 @@ body.dark .sidebar aside .toggle {
 
 /* ===================================== Board ===================================== */
 .Board-centered {
-    padding: 40px;
-    width: 100%;
-    top: 120px;
-    height: 100vh;
-    margin: 0;
+  padding: 40px;
+  overflow: hidden;
+  width: 100%;
+  top: 120px;
+  height: 100vh;
+  margin: 0;
 }
 
 .shiftedText {
@@ -319,6 +324,7 @@ body.dark .sidebar aside .toggle {
 .search-bar {
     width: 200px;
     margin: 0px;
+    height: 50px;
 }
 
 .profiles {
@@ -332,17 +338,15 @@ body.dark .sidebar aside .toggle {
 .c2 {
     background-color: purple;
 }
-
 .ProfileSercle {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #6C6C6C;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #6c6c6c;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-top: 5px;
 }
 
 .ProfileSercle .shiftedText {
@@ -357,37 +361,34 @@ body.dark .sidebar aside .toggle {
 }
 
 .Board-centered-top {
-    display: flex;
-    justify-content: space-between;
+  display: grid;
+  /* justify-content: space-between; */
+  grid-template-columns: 88% 19%;
 }
-
 .Board-settings {
-    visibility: visible;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    border-radius: 5px;
-    background: #EFEFEF;
-    width: 161px;
-    height: 45px;
-    flex-shrink: 0;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 5px;
+  background: #efefef;
+  width: 161px;
+  height: 45px;
+  flex-shrink: 0;
 }
 
 .Board-settings p {
-    display: flex;
-    justify-content: center;
-
-    color: #A3A1A1;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    text-align: center;
-    margin: 0px;
-
+  display: flex;
+  justify-content: center;
+  color: #a3a1a1;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  text-align: center;
+  margin: 0px;
 }
+
 
 .icon {
     color: #A3A1A1;
@@ -454,7 +455,7 @@ body.dark .sidebar aside .toggle {
 }
 .Board-centered-buttom{
 display: flex;
-gap: 10px;
+gap: 47px;
 margin-top: 5px;
 }
 .button{
@@ -464,6 +465,43 @@ margin-top: 5px;
     margin-top: 5px;
     outline: none;
 }
+.Board-settings {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 5px;
+    background: #efefef;
+    width: 161px;
+    height: 45px;
+    flex-shrink: 0;
+  }
+  
+  .Board-settings p {
+    display: flex;
+    justify-content: center;
+    color: #a3a1a1;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    text-align: center;
+    margin: 0px;
+  }
+/* .search-input {
+    width: 107px;
+    height: 36px;
+    
+  } */
+  .search-input::placeholder{
+    font-size: 11px;
+    align-items: center;
+  }
+  /* .search-input-container {
+    font-size: 11px;
+    top: 16px;
+    width: 95px;
+  } */
 .Add-board{
     visibility: hidden;
     height: 40px;
@@ -525,3 +563,102 @@ padding: 8px;
     background: #D9D9D9;
 }
 /* .   {} */
+
+
+@media (max-width: 768px) {
+    .Board-Popup-details{
+        display: none;
+    }
+    .BoldText {
+        font-size: 20px;
+        width: 280px;
+    }
+    .popUPrespo{
+        display: none;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+    .repoComent{
+        visibility: hidden;
+    }
+    .Board-centered-buttom{
+        overflow-x: auto;
+    }
+    .Board-settings p{
+        display: none;
+    }
+  
+  body {
+    overflow: scroll;
+  }
+  .Board-centered {
+    padding: 7px;
+    overflow: hidden;
+   
+}
+  .shiftedText {
+    
+    font-size: 10px;
+   
+}
+.BoldText {
+ 
+  font-size: 20px;
+  
+}
+
+.Board-settings {
+  
+  width: 34px;
+  height: 31px;
+  gap: 0;
+
+}
+.sidebar.close {
+  width: 70px;
+  padding: 10px;
+  opacity: 1;
+  align-items: center;
+}
+.sidebar aside .toggle {
+  display: none;
+}
+.search-input {
+  width: 107px;
+  height: 36px;
+  
+}
+.search-input::placeholder{
+  font-size: 11px;
+  align-items: center;
+}
+.search-input-container {
+  font-size: 11px;
+  top: 16px;
+  width: 95px;
+}
+.profiles {
+  position: fixed;
+  right: 73px;
+  top: 11px;
+}
+.btn-content {
+  bottom: -28px;
+  width: 33%;
+  left: 35%;
+}
+#empty-case {
+  padding: 26.3%;
+}
+.par {
+  
+  font-size: 11px;
+  gap: 3px;
+}
+.content {
+  display: grid;
+  grid-template-columns: 36% 86%;
+  
+}
+}
