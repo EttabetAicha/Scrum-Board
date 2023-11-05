@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Open+Sans:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Open+Sans:wght@300&family=Poppins&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family:  sans-serif;;
 }
 header {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -208,6 +207,7 @@ aside .image-text .profession {
   transition: var(--tran-05);
 }
 
+
 .sidebar li a {
     list-style: none;
     height: 100%;
@@ -229,6 +229,17 @@ aside .image-text .profession {
 
 .sidebar li a:hover .icon,
 .sidebar li a:hover .text {
+    color: #15A3EF;
+}
+.sidebar .board1  {
+    background-color: #15a3ef49;
+    width: 100%;
+    border-radius: 14px;
+
+}
+
+.sidebar li .board .icon,
+.sidebar li .board .text {
     color: #15A3EF;
 }
 
@@ -340,13 +351,13 @@ aside .image-text .profession {
 }
 
 .c2 {
-    background-color: purple;
+    background-color: rgb(70, 0, 128);
 }
 .ProfileSercle {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #6c6c6c;
+  background-color: #3686ff6c;
   width: 35px;
   height: 35px;
   border-radius: 50%;
@@ -423,9 +434,19 @@ aside .image-text .profession {
 }
 .list-content{
     overflow: auto;
-    width: 280px;
+    width: 280px;   
     height: 350px;
 }
+.list-content::-webkit-scrollbar-thumb {
+    background-color: #cfd0d1;
+    border-radius: 6px; 
+  }
+  .list-content::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+
 .board-addList{
     display: flex;
 }
@@ -441,7 +462,7 @@ aside .image-text .profession {
     margin: 0px;
     margin-left: 5px;
     color: rgba(108, 108, 108, 0.74);
-    font-size: 20px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -504,7 +525,7 @@ margin-top: 5px;
     
   } */
   .search-input::placeholder{
-    font-size: 11px;
+    font-size: 18px;
     align-items: center;
   }
   /* .search-input-container {
@@ -607,7 +628,7 @@ padding: 8px;
     border-radius: 5px;
     background: #D9D9D9;
 }
-/* .   {} */
+
 
 
 @media (max-width: 768px) {

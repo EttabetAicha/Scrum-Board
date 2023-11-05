@@ -2,23 +2,20 @@
 <html lang="en">
 
 <head>
-    
-
     <meta charset="UTF-8">
     <title>Scrum Board</title>
-
-    
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="/css/board.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
-    
+
 
 </head>
+
 <body>
     <div class="board-BgLayer">
         <div class="board-add p-3">
@@ -27,12 +24,13 @@
                 <button class="close-board-popup">
                     <i class="fa-solid fa-circle-xmark visible"></i>
                 </button>
-                
+
             </div>
             <div class="d-flex justify-content-between">
                 <div>
                     <p class="BoldText">
-                    En tant qu'utilisateur, je veux pouvoir faire glisser et déposer des tâches entre les colonnes de la Scrum Board pour les déplacer d'une étape à une autre.
+                        En tant qu'utilisateur, je veux pouvoir faire glisser et déposer des tâches entre les colonnes
+                        de la Scrum Board pour les déplacer d'une étape à une autre.
                     </p>
                     <div class="d-flex mt-3 mb-4 popUPrespo">
                         <div class="d-flex Board-popup-containerBTN mr-2" style="width: 180px;">
@@ -56,10 +54,10 @@
 
                     </div>
 
-                    
+
                 </div>
-                
-                
+
+
                 <div class="Board-Popup-details">
                     <div class="Board-Popup-innerDetails">
                         <p class="BoldText">Details</p>
@@ -90,53 +88,53 @@
                 </div>
 
             </div>
-            
-            
 
-            
+
+
+
         </div>
-        
+
     </div>
     <div class="board-BgLayer1">
-        
-        <div class="board-addList">
-            
-                <div class="d-flex justify-content-between board-text-header-popup">
-                    <p class="shiftedText ">
-                        Projects / Scrum Board
-                    </p>
-                    
-                    <button class="close-board-popup">
-                        <i class="fa-solid fa-circle-xmark visible"></i>
-                    </button>
-                </div>
-                <p class="BoldText">
-                    Add new list
-                    </p>
-                
-                    <div class="d-flex justify-content-between w-100">
-                        <input class="form-control form-control-lg ml-2 mr-2" type="text" placeholder="Type the list Name...">
-                        <button class="submitButton">
-                            Submit
-                        </button>
 
-                    </div>
-    
-                
-            
+        <div class="board-addList">
+
+            <div class="d-flex justify-content-between board-text-header-popup">
+                <p class="shiftedText ">
+                    Projects / Scrum Board
+                </p>
+
+                <button class="close-board-popup">
+                    <i class="fa-solid fa-circle-xmark visible"></i>
+                </button>
+            </div>
+            <p class="BoldText">
+                Add new list
+            </p>
+
+            <div class="d-flex justify-content-between w-100">
+                <input class="form-control form-control-lg ml-2 mr-2" type="text" placeholder="Type the list Name...">
+                <button class="submitButton">
+                    Submit
+                </button>
+
+            </div>
+
+
+
         </div>
     </div>
-    <header >
+    <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
             <a class="navbar-brand" href="#">
                 <img src="images/logo.png" alt="Logo" width="200">
             </a>
-    
+
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-    
+
             <div class="collapse navbar-collapse " id="navbarNav">
                 <ul class="navbar-nav ml-auto " style="    display: flex;
                 align-items: center;">
@@ -165,8 +163,8 @@
                         <button class="btn py-1 rounded" style="background: #59a4fa; color: aliceblue;">Create</button>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><img src="images/icon-park-solid_setting.png" style="margin-top: 16px;"
-                                width="25" alt=""></a>
+                        <a class="nav-link" href="#"><img src="images/icon-park-solid_setting.png"
+                                style="margin-top: 16px;" width="25" alt=""></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#"><img src="images/Rectangle.png" width="50" alt=""></a>
@@ -174,14 +172,14 @@
                 </ul>
             </div>
         </nav>
-    
-    
-    
+
+
+
     </header>
-    
+
     <div class="main">
         <nav class="sidebar close">
-            <aside >
+            <aside>
                 <div class="image-text" style="  padding-bottom: 21px;">
                     <span class="image">
                         <img src="../images/image 3.png" alt="">
@@ -205,8 +203,8 @@
                             </a>
                         </li>
 
-                        <li class="nav-link">
-                            <a href="#">
+                        <li class="nav-link board1">
+                            <a href="#" class="board">
                                 <i class='bx bx-list-plus icon'></i>
                                 <span class="text nav-text">Backlog</span>
                             </a>
@@ -268,10 +266,10 @@
                 <div class="settingContainer">
                     <div class="Board-settings" onclick="openP()">
                         <i class="fa-solid fa-sliders icon"></i>
-                        <p class="visiblity-par" >View settings</p>
-                      </div>
-                </button>
-                    
+                        <p class="visiblity-par">View settings</p>
+                    </div>
+                    </button>
+
                 </div>
 
             </section>
@@ -279,256 +277,293 @@
 
             <section class="Board-centered-buttom">
                 <div class="list shadow-sm">
-                   <div class="List-Head">
-                       <p class="List-HeadText">To do</p>
-                   </div>
-                   <div id="sortable1" class="sortable-list list-content">
-                       <div class="ui-state-default card mb-1 mt-1 shadow-sm cardheight">
+                    <div class="List-Head">
+                        <p class="List-HeadText">TO DO</p>
+                    </div>
+                    <div id="sortable1" class="sortable-list list-content">
+                        <div class="ui-state-default card mb-1 mt-1 shadow-sm cardheight">
                             <div class="card-body p-3">
-                                <p class="card-text">1-En tant qu'utilisateur, je veux pouvoir faire glisser et déposer des tâches entre les colonnes de la Scrum Board pour les déplacer d'une étape à une autre.
+                                <p class="card-text">1-En tant qu'utilisateur, je veux pouvoir faire glisser et déposer
+                                    des tâches entre les colonnes de la Scrum Board pour les déplacer d'une étape à une
+                                    autre.
 
                                 </p>
                                 <div class="d-flex justify-content-between">
-                                        <div class="d-flex mt-0"> <!-- the bookmark and text-->
-                                            <div class="bg-success BookMarkProperties">
-                                                <img src="images/Bookmark.png" alt="altr bookmark" width="9px" height="11px">
-                                            </div>
-                                            <p class="ml-2">SB-1</p>
-                                        </div>
-                                        <div class="ProfileSercle c1">
-                                            <p class="shiftedText">Y</p>
-                                        </div>
-                                </div>
-                            
-                            </div>
-                       </div>
-                       <div class="ui-state-default card mb-1 mt-1 shadow-sm cardheight">
-                        <div class="card-body p-3">
-                            <p class="card-text">2-En tant qu'utilisateur, je veux pouvoir faire glisser et déposer des tâches entre les colonnes de la Scrum Board pour les déplacer d'une étape à une autre.En tant qu'utilisateur, je veux pouvoir faire glisser et déposer des tâches entre les colonnes de la Scrum Board pour les déplacer d'une étape à une autre.</p>
-                            <div class="d-flex justify-content-between">
                                     <div class="d-flex mt-0"> <!-- the bookmark and text-->
                                         <div class="bg-success BookMarkProperties">
-                                            <img src="images/Bookmark.png" alt="altr bookmark" width="9px" height="11px">
+                                            <img src="images/Bookmark.png" alt="altr bookmark" width="9px"
+                                                height="11px">
                                         </div>
                                         <p class="ml-2">SB-1</p>
                                     </div>
                                     <div class="ProfileSercle c1">
                                         <p class="shiftedText">Y</p>
                                     </div>
+                                </div>
+
                             </div>
-                        
                         </div>
-                   </div>
-                   <div class="ui-state-default card mb-1 mt-1 shadow-sm cardheight">
-                    <div class="card-body p-3">
-                        <p class="card-text">3-En tant qu'utilisateur, je veux pouvoir faire glisser et déposer des tâches entre les colonnes de la Scrum Board pour les déplacer d'une étape à une autre.</p>
-                        <div class="d-flex justify-content-between">
-                                <div class="d-flex mt-0"> <!-- the bookmark and text-->
-                                    <div class="bg-success BookMarkProperties">
-                                        <img src="images/Bookmark.png" alt="altr bookmark" width="9px" height="11px">
+                        <div class="ui-state-default card mb-1 mt-1 shadow-sm cardheight">
+                            <div class="card-body p-3">
+                                <p class="card-text">2-En tant qu'utilisateur, je veux pouvoir faire glisser et déposer
+                                    des tâches entre les colonnes de la Scrum Board pour les déplacer d'une étape à une
+                                    autre.En tant qu'utilisateur, je veux pouvoir faire glisser et déposer des tâches
+                                    entre les colonnes de la Scrum Board pour les déplacer d'une étape à une autre.</p>
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex mt-0"> <!-- the bookmark and text-->
+                                        <div class="bg-success BookMarkProperties">
+                                            <img src="images/Bookmark.png" alt="altr bookmark" width="9px"
+                                                height="11px">
+                                        </div>
+                                        <p class="ml-2">SB-1</p>
                                     </div>
-                                    <p class="ml-2">SB-1</p>
+                                    <div class="ProfileSercle c1">
+                                        <p class="shiftedText">Y</p>
+                                    </div>
                                 </div>
-                                <div class="ProfileSercle c1">
-                                    <p class="shiftedText">Y</p>
-                                </div>
-                        </div>
-                    
-                    </div>
-               </div>
-               <div class="ui-state-default card mb-1 mt-1 shadow-sm cardheight">
-                <div class="card-body p-3">
-                    <p class="card-text">4-En tant qu'utilisateur, je veux pouvoir faire glisser et déposer des tâches entre les colonnes de la Scrum Board pour les déplacer d'une étape à une autre.</p>
-                    <div class="d-flex justify-content-between">
-                            <div class="d-flex mt-0"> <!-- the bookmark and text-->
-                                <div class="bg-success BookMarkProperties">
-                                    <img src="images/Bookmark.png" alt="altr bookmark" width="9px" height="11px">
-                                </div>
-                                <p class="ml-2">SB-1</p>
+
                             </div>
-                            <div class="ProfileSercle c1">
-                                <p class="shiftedText">Y</p>
-                            </div>
-                    </div>
-                
-                </div>
-           </div>
-                   </div>
-                </div> 
-                <div  class="list shadow-sm">
-                    <div class="List-Head">
-                        <p class="List-HeadText">Doing</p>
-                    </div>
-                    <div id="sortable2" class="sortable-list list-content">
-                        <div class="ui-state-default card mb-1 mt-1 shadow-sm cardheight">
-                             <div class="card-body p-3">
-                                 <p class="card-text">1-En tant qu'utilisateur, je veux pouvoir faire glisser et déposer des tâches entre les colonnes de la Scrum Board pour les déplacer d'une étape à une autre.</p>
-                                 <div class="d-flex justify-content-between">
-                                         <div class="d-flex mt-0"> <!-- the bookmark and text-->
-                                             <div class="bg-success BookMarkProperties">
-                                                 <img src="images/Bookmark.png" alt="altr bookmark" width="9px" height="11px">
-                                             </div>
-                                             <p class="ml-2">SB-1</p>
-                                         </div>
-                                         <div class="ProfileSercle c1">
-                                             <p class="shiftedText">Y</p>
-                                         </div>
-                                 </div>
-                             
-                             </div>
                         </div>
                         <div class="ui-state-default card mb-1 mt-1 shadow-sm cardheight">
-                         <div class="card-body p-3">
-                             <p class="card-text">2-En tant qu'utilisateur, je veux pouvoir faire glisser et déposer des tâches entre les colonnes de la Scrum Board pour les déplacer d'une étape à une autre.</p>
-                             <div class="d-flex justify-content-between">
-                                     <div class="d-flex mt-0"> <!-- the bookmark and text-->
-                                         <div class="bg-success BookMarkProperties">
-                                             <img src="images/Bookmark.png" alt="altr bookmark" width="9px" height="11px">
-                                         </div>
-                                         <p class="ml-2">SB-1</p>
-                                     </div>
-                                     <div class="ProfileSercle c1">
-                                         <p class="shiftedText">Y</p>
-                                     </div>
-                             </div>
-                         
-                         </div>
-                    </div>
-                    <div class="ui-state-default card mb-1 mt-1 shadow-sm cardheight">
-                     <div class="card-body p-3">
-                         <p class="card-text">3-En tant qu'utilisateur, je veux pouvoir faire glisser et déposer des tâches entre les colonnes de la Scrum Board pour les déplacer d'une étape à une autre.</p>
-                         <div class="d-flex justify-content-between">
-                                 <div class="d-flex mt-0"> <!-- the bookmark and text-->
-                                     <div class="bg-success BookMarkProperties">
-                                         <img src="images/Bookmark.png" alt="altr bookmark" width="9px" height="11px">
-                                     </div>
-                                     <p class="ml-2">SB-1</p>
-                                 </div>
-                                 <div class="ProfileSercle c1">
-                                     <p class="shiftedText">Y</p>
-                                 </div>
-                         </div>
-                     
-                     </div>
-                </div>
-                <div class="ui-state-default card mb-1 mt-1 shadow-sm cardheight">
-                 <div class="card-body p-3">
-                     <p class="card-text">4-En tant qu'utilisateur, je veux pouvoir faire glisser et déposer des tâches entre les colonnes de la Scrum Board pour les déplacer d'une étape à une autre.</p>
-                     <div class="d-flex justify-content-between">
-                             <div class="d-flex mt-0"> <!-- the bookmark and text-->
-                                 <div class="bg-success BookMarkProperties">
-                                     <img src="images/Bookmark.png" alt="altr bookmark" width="9px" height="11px">
-                                 </div>
-                                 <p class="ml-2">SB-1</p>
-                             </div>
-                             <div class="ProfileSercle c1">
-                                 <p class="shiftedText">Y</p>
-                             </div>
-                     </div>
-                 
-                 </div>
-            </div>
+                            <div class="card-body p-3">
+                                <p class="card-text">3-En tant qu'utilisateur, je veux pouvoir faire glisser et déposer
+                                    des tâches entre les colonnes de la Scrum Board pour les déplacer d'une étape à une
+                                    autre.</p>
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex mt-0">
+                                        <div class="bg-success BookMarkProperties">
+                                            <img src="images/Bookmark.png" alt="altr bookmark" width="9px"
+                                                height="11px">
+                                        </div>
+                                        <p class="ml-2">SB-1</p>
+                                    </div>
+                                    <div class="ProfileSercle c1">
+                                        <p class="shiftedText">Y</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="ui-state-default card mb-1 mt-1 shadow-sm cardheight">
+                            <div class="card-body p-3">
+                                <p class="card-text">4-En tant qu'utilisateur, je veux pouvoir faire glisser et déposer
+                                    des tâches entre les colonnes de la Scrum Board pour les déplacer d'une étape à une
+                                    autre.</p>
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex mt-0"> <!-- the bookmark and text-->
+                                        <div class="bg-success BookMarkProperties">
+                                            <img src="images/Bookmark.png" alt="altr bookmark" width="9px"
+                                                height="11px">
+                                        </div>
+                                        <p class="ml-2">SB-1</p>
+                                    </div>
+                                    <div class="ProfileSercle c1">
+                                        <p class="shiftedText">Y</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="list shadow-sm">
                     <div class="List-Head">
-                        <p class="List-HeadText">Done</p>
+                        <p class="List-HeadText">IN PROGRESS</p>
+                    </div>
+                    <div id="sortable2" class="sortable-list list-content">
+                        <div class="ui-state-default card mb-1 mt-1 shadow-sm cardheight">
+                            <div class="card-body p-3">
+                                <p class="card-text">1-En tant qu'utilisateur, je veux pouvoir faire glisser et déposer
+                                    des tâches entre les colonnes de la Scrum Board pour les déplacer d'une étape à une
+                                    autre.</p>
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex mt-0"> <!-- the bookmark and text-->
+                                        <div class="bg-success BookMarkProperties">
+                                            <img src="images/Bookmark.png" alt="altr bookmark" width="9px"
+                                                height="11px">
+                                        </div>
+                                        <p class="ml-2">SB-1</p>
+                                    </div>
+                                    <div class="ProfileSercle c1">
+                                        <p class="shiftedText">Y</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="ui-state-default card mb-1 mt-1 shadow-sm cardheight">
+                            <div class="card-body p-3">
+                                <p class="card-text">2-En tant qu'utilisateur, je veux pouvoir faire glisser et déposer
+                                    des tâches entre les colonnes de la Scrum Board pour les déplacer d'une étape à une
+                                    autre.</p>
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex mt-0"> <!-- the bookmark and text-->
+                                        <div class="bg-success BookMarkProperties">
+                                            <img src="images/Bookmark.png" alt="altr bookmark" width="9px"
+                                                height="11px">
+                                        </div>
+                                        <p class="ml-2">SB-1</p>
+                                    </div>
+                                    <div class="ProfileSercle c1">
+                                        <p class="shiftedText">Y</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="ui-state-default card mb-1 mt-1 shadow-sm cardheight">
+                            <div class="card-body p-3">
+                                <p class="card-text">3-En tant qu'utilisateur, je veux pouvoir faire glisser et déposer
+                                    des tâches entre les colonnes de la Scrum Board pour les déplacer d'une étape à une
+                                    autre.</p>
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex mt-0"> <!-- the bookmark and text-->
+                                        <div class="bg-success BookMarkProperties">
+                                            <img src="images/Bookmark.png" alt="altr bookmark" width="9px"
+                                                height="11px">
+                                        </div>
+                                        <p class="ml-2">SB-1</p>
+                                    </div>
+                                    <div class="ProfileSercle c1">
+                                        <p class="shiftedText">Y</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="ui-state-default card mb-1 mt-1 shadow-sm cardheight">
+                            <div class="card-body p-3">
+                                <p class="card-text">4-En tant qu'utilisateur, je veux pouvoir faire glisser et déposer
+                                    des tâches entre les colonnes de la Scrum Board pour les déplacer d'une étape à une
+                                    autre.</p>
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex mt-0"> <!-- the bookmark and text-->
+                                        <div class="bg-success BookMarkProperties">
+                                            <img src="images/Bookmark.png" alt="altr bookmark" width="9px"
+                                                height="11px">
+                                        </div>
+                                        <p class="ml-2">SB-1</p>
+                                    </div>
+                                    <div class="ProfileSercle c1">
+                                        <p class="shiftedText">Y</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list shadow-sm">
+                    <div class="List-Head">
+                        <p class="List-HeadText">DONE</p>
                     </div>
                     <div id="sortable3" class="sortable-list list-content">
                         <div class="ui-state-default card mb-1 mt-1 shadow-sm cardheight">
-                             <div class="card-body p-3">
-                                 <p class="card-text">1-En tant qu'utilisateur, je veux pouvoir faire glisser et déposer des tâches entre les colonnes de la Scrum Board pour les déplacer d'une étape à une autre.</p>
-                                 <div class="d-flex justify-content-between">
-                                         <div class="d-flex mt-0"> <!-- the bookmark and text-->
-                                             <div class="bg-success BookMarkProperties">
-                                                 <img src="images/Bookmark.png" alt="altr bookmark" width="9px" height="11px">
-                                             </div>
-                                             <p class="ml-2">SB-1</p>
-                                         </div>
-                                         <div class="ProfileSercle c1">
-                                             <p class="shiftedText">Y</p>
-                                         </div>
-                                 </div>
-                             
-                             </div>
+                            <div class="card-body p-3">
+                                <p class="card-text">1-En tant qu'utilisateur, je veux pouvoir faire glisser et déposer
+                                    des tâches entre les colonnes de la Scrum Board pour les déplacer d'une étape à une
+                                    autre.</p>
+                                <div class="d-flex justify-content-between ">
+                                    <div class="d-flex mt-0"> <!-- the bookmark and text-->
+                                        <div class="bg-success BookMarkProperties">
+                                            <img src="images/Bookmark.png" alt="altr bookmark" width="9px"
+                                                height="11px">
+                                        </div>
+                                        <p class="ml-2">SB-1</p>
+                                    </div>
+                                    <div class="ProfileSercle c1">
+                                        <p class="shiftedText">Y</p>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
                         <div class="ui-state-default card mb-1 mt-1 shadow-sm cardheight">
-                         <div class="card-body p-3">
-                             <p class="card-text">2-En tant qu'utilisateur, je veux pouvoir faire glisser et déposer des tâches entre les colonnes de la Scrum Board pour les déplacer d'une étape à une autre.</p>
-                             <div class="d-flex justify-content-between">
-                                     <div class="d-flex mt-0"> <!-- the bookmark and text-->
-                                         <div class="bg-success BookMarkProperties">
-                                             <img src="images/Bookmark.png" alt="altr bookmark" width="9px" height="11px">
-                                         </div>
-                                         <p class="ml-2">SB-1</p>
-                                     </div>
-                                     <div class="ProfileSercle c1">
-                                         <p class="shiftedText">Y</p>
-                                     </div>
-                             </div>
-                         
-                         </div>
-                    </div>
-                    <div class="ui-state-default card mb-1 mt-1 shadow-sm cardheight">
-                     <div class="card-body p-3">
-                         <p class="card-text">3-En tant qu'utilisateur, je veux pouvoir faire glisser et déposer des tâches entre les colonnes de la Scrum Board pour les déplacer d'une étape à une autre.</p>
-                         <div class="d-flex justify-content-between">
-                                 <div class="d-flex mt-0"> <!-- the bookmark and text-->
-                                     <div class="bg-success BookMarkProperties">
-                                         <img src="images/Bookmark.png" alt="altr bookmark" width="9px" height="11px">
-                                     </div>
-                                     <p class="ml-2">SB-1</p>
-                                 </div>
-                                 <div class="ProfileSercle c1">
-                                     <p class="shiftedText">Y</p>
-                                 </div>
-                         </div>
-                     
-                     </div>
-                </div>
-                <div class="ui-state-default card mb-1 mt-1 shadow-sm cardheight">
-                 <div class="card-body p-3">
-                     <p class="card-text">4-En tant qu'utilisateur, je veux pouvoir faire glisser et déposer des tâches entre les colonnes de la Scrum Board pour les déplacer d'une étape à une autre.</p>
-                     <div class="d-flex justify-content-between">
-                             <div class="d-flex mt-0"> <!-- the bookmark and text-->
-                                 <div class="bg-success BookMarkProperties">
-                                     <img src="images/Bookmark.png" alt="altr bookmark" width="9px" height="11px">
-                                 </div>
-                                 <p class="ml-2">SB-1</p>
-                             </div>
-                             <div class="ProfileSercle c1">
-                                 <p class="shiftedText">Y</p>
-                             </div>
-                     </div>
-                 
-                 </div>
-            </div>
+                            <div class="card-body p-3">
+                                <p class="card-text">2-En tant qu'utilisateur, je veux pouvoir faire glisser et déposer
+                                    des tâches entre les colonnes de la Scrum Board pour les déplacer d'une étape à une
+                                    autre.</p>
+                                <div class="d-flex justify-content-between edit-circle">
+                                    <div class="d-flex mt-0"> <!-- the bookmark and text-->
+                                        <div class="bg-success BookMarkProperties">
+                                            <img src="images/Bookmark.png" alt="altr bookmark" width="9px"
+                                                height="11px">
+                                        </div>
+                                        <p class="ml-2">SB-1</p>
+                                    </div>
+                                    <div class="ProfileSercle c1">
+                                        <p class="shiftedText">Y</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="ui-state-default card mb-1 mt-1 shadow-sm cardheight">
+                            <div class="card-body p-3">
+                                <p class="card-text">3-En tant qu'utilisateur, je veux pouvoir faire glisser et déposer
+                                    des tâches entre les colonnes de la Scrum Board pour les déplacer d'une étape à une
+                                    autre.</p>
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex mt-0"> <!-- the bookmark and text-->
+                                        <div class="bg-success BookMarkProperties">
+                                            <img src="images/Bookmark.png" alt="altr bookmark" width="9px"
+                                                height="11px">
+                                        </div>
+                                        <p class="ml-2">SB-1</p>
+                                    </div>
+                                    <div class="ProfileSercle c1">
+                                        <p class="shiftedText">Y</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="ui-state-default card mb-1 mt-1 shadow-sm cardheight">
+                            <div class="card-body p-3">
+                                <p class="card-text">4-En tant qu'utilisateur, je veux pouvoir faire glisser et déposer
+                                    des tâches entre les colonnes de la Scrum Board pour les déplacer d'une étape à une
+                                    autre.</p>
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex mt-0"> <!-- the bookmark and text-->
+                                        <div class="bg-success BookMarkProperties">
+                                            <img src="images/Bookmark.png" alt="altr bookmark" width="9px"
+                                                height="11px">
+                                        </div>
+                                        <p class="ml-2">SB-1</p>
+                                    </div>
+                                    <div class="ProfileSercle c1">
+                                        <p class="shiftedText">Y</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <button class="Add-board">
-                    <img src="images/PLus.png" class="plus" alt="plus sign" width="35px" height="35px">   
-                 </button>
-                 
+                    <img src="images/PLus.png" class="plus" alt="plus sign" width="30" height="30">
+                </button>
+
             </section>
         </section>
     </div>
 
 
     <script>
-                function truncateText(text, maxLength) {
-                    if (text.length > maxLength) {
-                        return text.substring(0, maxLength) + "...";
-                    }
-                    return text;
-                    }
+        function truncateText(text, maxLength) {
+            if (text.length > maxLength) {
+                return text.substring(0, maxLength) + "...";
+            }
+            return text;
+        }
 
-                    const cardTextElements = document.querySelectorAll(".card-text");
+        const cardTextElements = document.querySelectorAll(".card-text");
 
-                    const maxLength = 150;
+        const maxLength = 150;
 
-                    cardTextElements.forEach(function (element) {
-                    element.textContent = truncateText(element.textContent, maxLength);
-                    });
+        cardTextElements.forEach(function (element) {
+            element.textContent = truncateText(element.textContent, maxLength);
+        });
 
     </script>
     <script src="../js/script.js"></script>
@@ -538,16 +573,16 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script>
-        $(function() {
-                $(".sortable-list").sortable({
+        $(function () {
+            $(".sortable-list").sortable({
                 connectWith: ".sortable-list",
                 placeholder: "ui-state-highlight",
-                receive: function(event, ui) {
+                receive: function (event, ui) {
                     console.log("Item switched.");
                 }
-                }).disableSelection()
-            });
-      </script>
+            }).disableSelection()
+        });
+    </script>
 </body>
 
 </html>
