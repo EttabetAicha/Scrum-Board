@@ -1,6 +1,9 @@
 header {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  position: fixed;
+  width: 100%;  
+  z-index: 999;
 }
 
 * {
@@ -199,6 +202,15 @@ body.dark .sidebar aside .toggle {
 .sidebar li a:hover .text {
   color: #15a3ef;
 }
+.se {
+  background-color: #15a3ef49;
+  width: 100%;
+  border-radius: 14px;
+}
+.setting .icon,
+.setting.text {
+  color: #15a3ef;
+}
 
 .sidebar .menu-bar {
   height: calc(100% - 55px);
@@ -251,7 +263,7 @@ body.dark .sidebar aside .toggle {
 #users button {
   display: block;
   margin-left: auto;
-  margin-right: 250px;
+  margin-right:165px;
 }
 
 .project-avatar {
@@ -266,4 +278,7 @@ body.dark .sidebar aside .toggle {
 #project-avatar {
   width: 100%;
   height: auto;
+}
+table{
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
