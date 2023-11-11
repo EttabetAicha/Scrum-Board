@@ -11,7 +11,7 @@ let inp = document.getElementById("inputValue");
 let boxs = document.querySelectorAll(".your_sprint");
 let bx_test = document.getElementById("bx_test");
 let drag = null;
-let empty = document.getElementById("paragra");
+let empty = document.querySelector("#paragra");
 plus.onclick = function () {
   if (inp.value != "") {
     bx_test.innerHTML += `
@@ -27,16 +27,21 @@ plus.onclick = function () {
   <button   class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
     Small button
   </button>
-  <ul class="dropdown-menu">
-    
-  </ul>
+  
+
 </span>
+<span >
 
 
+<i style=" cursor: pointer;"  id="delet" class="fa-solid fa-ellipsis" ></i>
+<i class="fa-regular fa-user"></i>
+</span>
     </p>
+
    `;
     inp.value = "";
   }
+
   dragItem();
 };
 function dragItem() {
@@ -97,3 +102,20 @@ function shin() {
     sin.style.display = "none";
   }
 }
+// delet sprint
+let sprint = document.getElementById("sprint");
+function deleteSprin() {
+  console.log("youness");
+  sprint.style.visibility = "hidden";
+}
+
+// delete user story
+let item = document.getElementsByClassName("item");
+let supr = document.getElementById("delet");
+supr.addEventListener("click", function () {
+  item.style.background = "none";
+});
+
+let creatSprint = document.querySelector(".creat");
+let AllSprints = document.querySelector(".AllSprints");
+let spr = document.getElementsByClassName("sprint").clone;

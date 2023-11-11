@@ -381,7 +381,7 @@ body.dark .sidebar aside .toggle {
   color: #a3a1a1;
 }
 /* ______________ */
-.sprint-part-2 > span {
+/* .sprint-part-2 > span {
   width: 30px;
   height: 30px;
 }
@@ -412,11 +412,15 @@ body.dark .sidebar aside .toggle {
 #pen {
   display: none;
 }
-#boton {
-  display: none;
-}
+
 .sprint:hover #pen {
   display: inline;
+}
+.btn-group {
+  visibility: hidden;
+}
+.sprint:hover .btn-group {
+  visibility: visible;
 }
 
 .baclog-part {
@@ -474,11 +478,87 @@ body.dark .sidebar aside .toggle {
 }
 /* style the modal */
 
+/*#myElement {
+  gap: 10px;
+  align-items: center;
+} */
+.sprint-part-2 > span,
+.baclog-part2-2 > span {
+  width: 30px;
+  height: 30px;
+}
+
+.border-2 {
+  display: flex;
+  padding: 18px;
+  margin: 0;
+  width: 140px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 5%);
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.sprint {
+  margin-left: 0;
+  align-items: center;
+  background-color: #f8f8f8;
+  padding: 12px;
+  flex-wrap: nowrap;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+#pen {
+  display: none;
+}
+
+.sprint:hover #pen {
+  display: inline;
+}
+
+.baclog-part {
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.baclog-part1,
+.item {
+  width: 100%;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: solid rgba(0, 0, 0, 0.155) 2px;
+  margin-top: 5px;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  cursor: move;
+  border: rgba(0, 0, 0, 0.144) solid 1px;
+  border-radius: 5px;
+  margin-top: 22px;
+}
+
+#inputValu,
+#plus {
+  width: 100%;
+  border-radius: 5px;
+}
+
+#exampleModal {
+  position: absolute;
+  right: 0;
+}
+
 #myElement {
   gap: 10px;
   align-items: center;
 }
-/* #inputValue {
-  width: 100%;
-  height: 30px;
-} */
+
+/* Additional styles for specific elements or IDs can be added below */
