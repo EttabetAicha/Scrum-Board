@@ -560,5 +560,70 @@ body.dark .sidebar aside .toggle {
   gap: 10px;
   align-items: center;
 }
-
-/* Additional styles for specific elements or IDs can be added below */
+@media (max-width: 768px) {
+  body {
+    overflow: scroll;
+  }
+  .Board-centered {
+    padding: 7px;
+    overflow: auto;
+  }
+  .shiftedText {
+    font-size: 10px;
+  }
+  .BoldText {
+    font-size: 20px;
+  }
+  .visiblity-par {
+    visibility: hidden;
+    width: 0;
+  }
+  .Board-settings {
+    width: 34px;
+    height: 31px;
+    gap: 0;
+  }
+  .sidebar.close {
+    width: 70px;
+    padding: 10px;
+    opacity: 1;
+    align-items: center;
+  }
+  .sidebar aside .toggle {
+    display: none;
+  }
+  .search-input {
+    width: 107px;
+    height: 36px;
+  }
+  .search-input::placeholder {
+    font-size: 11px;
+    align-items: center;
+  }
+  .search-input-container {
+    font-size: 11px;
+    top: 16px;
+    width: 95px;
+  }
+  .profiles {
+    position: fixed;
+    right: 73px;
+    top: 11px;
+  }
+  .btn-content {
+    bottom: -28px;
+    width: 33%;
+    left: 35%;
+  }
+  #empty-case {
+    padding: 26.3%;
+  }
+  .par {
+    font-size: 11px;
+    gap: 3px;
+  }
+  .content {
+    display: grid;
+    grid-template-columns: 36% 86%;
+  }
+}

@@ -30,12 +30,9 @@ plus.onclick = function () {
   
 
 </span>
-<span >
 
 
 <i style=" cursor: pointer;"  id="delet" class="fa-solid fa-ellipsis" ></i>
-<i class="fa-regular fa-user"></i>
-</span>
     </p>
 
    `;
