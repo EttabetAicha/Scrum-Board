@@ -31,7 +31,7 @@ plus.onclick = function () {
 
 </span>
 
-
+<i class="fa-regular fa-user"></i>
 <i style=" cursor: pointer;"  id="delet" class="fa-solid fa-ellipsis" ></i>
     </p>
 
@@ -73,16 +73,6 @@ function dragItem() {
   });
 }
 
-// input
-function toggleElement() {
-  var element = document.getElementById("myElement");
-
-  if (element.style.display === "none") {
-    element.style.display = "block";
-  } else {
-    element.style.display = "none";
-  }
-}
 function aficher() {
   let items = document.getElementById("bx_test");
   if (items.style.display === "none") {
@@ -112,7 +102,3 @@ let supr = document.getElementById("delet");
 supr.addEventListener("click", function () {
   item.style.background = "none";
 });
-
-let creatSprint = document.querySelector(".creat");
-let AllSprints = document.querySelector(".AllSprints");
-let spr = document.getElementsByClassName("sprint").clone;

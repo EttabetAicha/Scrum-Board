@@ -381,107 +381,7 @@ body.dark .sidebar aside .toggle {
   color: #a3a1a1;
 }
 /* ______________ */
-/* .sprint-part-2 > span {
-  width: 30px;
-  height: 30px;
-}
 
-.border-2 {
-  display: flex;
-  padding: 18px;
-  margin: 0;
-  width: 140px;
-  height: 40px;
-  background-color: rgb(0 0 0 / 5%);
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-}
-
-.sprint {
-  margin-left: 0;
-  align-items: center;
-  background-color: #f8f8f8;
-  padding: 12px;
-  flex-wrap: nowrap;
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-}
-#pen {
-  display: none;
-}
-
-.sprint:hover #pen {
-  display: inline;
-}
-.btn-group {
-  visibility: hidden;
-}
-.sprint:hover .btn-group {
-  visibility: visible;
-}
-
-.baclog-part {
-  align-items: center;
-  flex-wrap: nowrap;
-
-  justify-content: space-between;
-}
-.baclog-part2-2 > span {
-  width: 30px;
-  height: 30px;
-}
-
-.baclog-part1 {
-  width: 50%;
-}
-.item {
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  border-bottom: solid rgba(0, 0, 0, 0.155) 2px;
-  margin-top: 5px;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  cursor: move;
-  border: rgba(0, 0, 0, 0.144) solid 1px;
-  border-radius: 5px;
-  width: 100%;
-  margin-top: 22px;
-}
-
-.para {
-  display: none;
-}
-#paragra {
-  border: solid 2px rgb(0 0 0 / 5%);
-  border-radius: 5px;
-
-  padding: 10px;
-  color: rgba(0, 0, 0, 0.425);
-  margin-top: 12px;
-}
-#inputValu {
-  width: 100%;
-  border-radius: 5px;
-}
-#plus {
-  width: 100%;
-  border-radius: 5px;
-}
-
-#exampleModal {
-  position: absolute;
-  right: 0;
-}
-/* style the modal */
-
-/*#myElement {
-  gap: 10px;
-  align-items: center;
-} */
 .sprint-part-2 > span,
 .baclog-part2-2 > span {
   width: 30px;
@@ -560,7 +460,7 @@ body.dark .sidebar aside .toggle {
   gap: 10px;
   align-items: center;
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   body {
     overflow: scroll;
   }
@@ -610,20 +510,12 @@ body.dark .sidebar aside .toggle {
     right: 73px;
     top: 11px;
   }
-  .btn-content {
-    bottom: -28px;
-    width: 33%;
-    left: 35%;
+  #sprint {
+    width: 900px;
+    /* overflow-x: scroll; */
   }
-  #empty-case {
-    padding: 26.3%;
-  }
-  .par {
-    font-size: 11px;
-    gap: 3px;
-  }
-  .content {
-    display: grid;
-    grid-template-columns: 36% 86%;
+  #backlog {
+    width: 900px;
+    /* overflow-x: scroll; */
   }
 }
